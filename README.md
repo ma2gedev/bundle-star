@@ -1,24 +1,23 @@
-# Bundle::Star
+# bundle-star
 
-TODO: Write a gem description
+bundle-star starred gem's github repository when `bundle-star install`ed
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'bundle-star'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install bundle-star
 
 ## Usage
 
-TODO: Write usage instructions here
+Use `bundle-star` instead of `bundle`:
+
+    $ bundle-star install
+    $ bundle-star update
+
+Pro tip:
+
+    alias bsi="bundle-star install"
 
 ## Contributing
 
