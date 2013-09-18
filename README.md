@@ -1,6 +1,6 @@
-# bundle-star
+# Bundle-star
 
-bundle-star starred gem's github repository when `bundle-star install`ed
+Bundle-star starred gem's github repository when `bundle-star install`ed
 
 ## Installation
 
@@ -10,12 +10,25 @@ Install it yourself as:
 
 ## Usage
 
-Use `bundle-star` instead of `bundle`:
+### Setup a .netrc file
+
+Bundle-star depends on Netrc gem and Octokit gem to access GitHub API. 
+Write your GitHub credentials into `.netrc` file(locating to `~/.netrc`), you can now access to GitHub API by bundle-star command.
+
+The following is a sample `.netrc` file.
+
+```
+machine api.github.com
+  login <your github account>
+  password <your 40 char github token>
+```
+
+### Use `bundle-star` instead of `bundle`:
 
     $ bundle-star install
     $ bundle-star update
 
-Pro tip:
+### Pro tip:
 
     alias bsi="bundle-star install"
 
