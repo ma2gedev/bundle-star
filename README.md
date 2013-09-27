@@ -2,6 +2,8 @@
 
 Bundle-star starred gem's github repository when `bundle-star install`ed
 
+See Also my slide for M3 TechTalk https://speakerdeck.com/ma2gedev/bundle-star-how-to-appreciate-oss-projects
+
 ## Installation
 
 Install it yourself as:
