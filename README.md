@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/ma2gedev/bundle-star.png?label=ready)](https://waffle.io/ma2gedev/bundle-star)  
 # Bundle-star
 
 Bundle-star starred gem's github repository when `bundle-star install`ed
