@@ -16,9 +16,9 @@ module Bundler
         begin
           client = Octokit::Client.new netrc: true
           client.star repo
-          puts "starred #{repo} (^_^)b"
+          puts "\e[33mstarred #{repo} (^_^)b\e[0m"
         rescue => e
-          puts "failed starring #{repo}, reason #{e}"
+          puts "\e[31mfailed starring #{repo}, reason #{e}\e[0m"
         end
       end
     end
