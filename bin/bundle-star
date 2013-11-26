@@ -16,7 +16,9 @@ module Bundler
         begin
           client = Octokit::Client.new netrc: true
           client.star repo
-          puts "\e[33mstarred #{repo} (^_^)b\e[0m"
+          message = "\e[33m"
+          message << (macos_higher_lion? ? "\xe2\xad\x90  " : "\xe2\x98\x85  ")
+          puts message + "starred #{repo} (^_^)b\e[0m"
         rescue => e
           puts "\e[31mfailed starring #{repo}, reason #{e}\e[0m"
         end
@@ -36,6 +38,14 @@ module Bundler
           "#{$1}/#{$2}"
         end
       end
+    end
+
+    def macos_higher_lion?
+      unless RUBY_PLATFORM =~ /darwin/
+        return false
+      end
+      macos_version = `/usr/bin/sw_vers -productVersion`.chomp.slice(/\d+\.\d+/).to_f
+      macos_version >= 10.7
     end
   end
 end
