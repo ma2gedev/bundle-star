@@ -18,7 +18,7 @@ Install it yourself as:
 Bundle-star depends on Netrc gem and Octokit gem to access GitHub API. 
 Write your GitHub credentials into `.netrc` file(locating to `~/.netrc`), you can now access to GitHub API by bundle-star command.
 
-The following is a sample `.netrc` file.
+The following is a sample `.netrc` file. And execute `chmod 600 ~/.netrc` to avoid permission error.
 
 ```
 machine api.github.com
