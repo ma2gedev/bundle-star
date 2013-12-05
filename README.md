@@ -33,28 +33,7 @@ machine api.github.com
 
 ### Example
 
-    $ echo "source 'https://rubygems.org'" >> Gemfile
-    $ echo "gem 'bundle-star'" >> Gemfile
-    $ bundle-star install --path vendor/bundle
-    Fetching gem metadata from https://rubygems.org/............
-    Fetching gem metadata from https://rubygems.org/..
-    Resolving dependencies...
-    Installing addressable (2.3.5)
-    Using bundler (1.4.0.pre.2)
-    starred geemus/netrc                <------ starred
-    Installing netrc (0.7.7)
-    starred nicksieger/multipart-post   <------ starred
-    Installing multipart-post (1.2.0)
-    starred lostisland/faraday          <------ starred
-    Installing faraday (0.8.8)
-    starred lostisland/sawyer           <------ starred
-    Installing sawyer (0.5.1)
-    starred octokit/octokit.rb          <------ starred
-    Installing octokit (2.6.0)
-    starred ma2gedev/bundle-star        <------ starred
-    Installing bundle-star (1.0.0)
-    Your bundle is complete!
-    It was installed into ./vendor/bundle
+![example](https://github.com/ma2gedev/bundle-star/raw/master/exec_bundle-star.png)
 
 ### Pro tip:
 
