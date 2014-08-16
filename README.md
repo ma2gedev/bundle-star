@@ -1,9 +1,9 @@
 [![Stories in Ready](https://badge.waffle.io/ma2gedev/bundle-star.png?label=ready)](https://waffle.io/ma2gedev/bundle-star)  
 # Bundle-star
 
-Bundle-star starred gem's github repository when `bundle-star install`ed
+Bundle-star starred gem's github repository when bundle installing by `bundle-star` command.
 
-+![Demo](https://github.com/ma2gedev/bundle-star/raw/master/try-bundle-star.gif)
+![Demo](https://github.com/ma2gedev/bundle-star/raw/master/try-bundle-star.gif)
 
 See Also my slide for M3 TechTalk https://speakerdeck.com/ma2gedev/bundle-star-how-to-appreciate-oss-projects
 
