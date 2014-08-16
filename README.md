@@ -3,6 +3,8 @@
 
 Bundle-star starred gem's github repository when `bundle-star install`ed
 
++![Demo](https://github.com/ma2gedev/bundle-star/raw/master/try-bundle-star.gif)
+
 See Also my slide for M3 TechTalk https://speakerdeck.com/ma2gedev/bundle-star-how-to-appreciate-oss-projects
 
 ## Installation
@@ -30,10 +32,6 @@ machine api.github.com
 
     $ bundle-star install
     $ bundle-star update
-
-### Example
-
-![example](https://github.com/ma2gedev/bundle-star/raw/master/exec_bundle-star.png)
 
 ### Pro tip:
 
