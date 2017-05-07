@@ -21,6 +21,7 @@ module Bundler
           puts message + "starred #{repo} (^_^)b\e[0m"
         rescue => e
           puts "\e[31mfailed starring #{repo}, reason #{e}\e[0m"
+          puts e.backtrace if ENV['DEBUG']
         end
       end
     end
