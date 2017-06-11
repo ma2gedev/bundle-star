@@ -44,3 +44,14 @@ machine api.github.com
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Development
+
+### DEBUG environment variable
+
+It is useful for develop with DEBUG environment variable like the following:
+
+```
+DEBUG=true bin/bundle-star
+```
+
