@@ -25,7 +25,7 @@ The following is a sample `.netrc` file. And execute `chmod 600 ~/.netrc` to avo
 ```
 machine api.github.com
   login <your github account>
-  password <your 40 char github token>
+  password <your 40 char github token, you can get a token from https://github.com/settings/tokens>
 ```
 
 ### Use `bundle-star` instead of `bundle`:
