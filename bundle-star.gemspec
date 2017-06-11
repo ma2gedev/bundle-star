@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "bundler"
   spec.add_dependency "netrc"
-  spec.add_dependency "octokit", "~> 2.0"
+  spec.add_dependency "octokit", "~> 4.0"
 
   spec.add_development_dependency "rake"
 end
