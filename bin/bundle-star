@@ -1,7 +1,33 @@
 #!/usr/bin/env ruby
 
 require "rubygems"
+require "netrc"
+require "io/console"
+require "fileutils"
 require "octokit"
+
+GITHUB_HOST = "api.github.com".freeze
+netrc = Netrc.read
+github_account = netrc[GITHUB_HOST]
+unless github_account
+  src_path = Netrc.default_path
+  puts "Not found your GitHub ID/Token. Please input your GitHub ID and Token if you ok, bundle-star will save these information to netrc file: "
+
+  puts "Input GitHub ID"
+  github_id = STDIN.gets.chomp
+  puts "Input GitHub Token"
+  github_token = STDIN.noecho(&:gets).chomp
+
+  if netrc.length > 0
+    dest_path = "#{Netrc.default_path}.backup_by_bundlestar"
+    FileUtils.cp src_path, dest_path
+    puts "Your original netrc file is copied to #{dest_path}"
+  end
+
+  netrc[GITHUB_HOST] = github_id, github_token
+  netrc.save
+  puts "Saved to #{src_path}"
+end
 
 module Bundler
   class Star
