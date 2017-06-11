@@ -46,7 +46,7 @@ module Bundler
           message << (macos_higher_lion? ? "\xe2\xad\x90  " : "\xe2\x98\x85  ")
           puts message + "starred #{repo} (^_^)b\e[0m"
         rescue => e
-          puts "\e[31mfailed starring #{repo}, reason #{e}\e[0m"
+          puts "\e[31mfailed putting a star #{repo}, reason #{e}\e[0m"
           puts e.backtrace if ENV['DEBUG']
         end
       end
