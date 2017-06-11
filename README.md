@@ -37,6 +37,15 @@ machine api.github.com
 
     alias bsi="bundle-star install"
 
+### See Also
+
+- About GitHub token
+  - Creating a personal access token for the command line - User Documentation
+    - https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+- `.netrc` file
+  - GNU Inetutils: The .netrc file
+    - https://www.gnu.org/software/inetutils/manual/html_node/The-_002enetrc-file.html
+
 ## Contributing
 
 1. Fork it
