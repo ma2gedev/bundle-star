@@ -11,7 +11,7 @@ netrc = Netrc.read
 github_account = netrc[GITHUB_HOST]
 unless github_account
   src_path = Netrc.default_path
-  puts "Not found your GitHub ID/Token. Please input your GitHub ID and Token if you ok, bundle-star will save these information to netrc file: "
+  puts "GitHub ID/Token not found. Please input your GitHub ID and Token. bundle-star will save this information to your netrc file: "
 
   puts "Input GitHub ID"
   github_id = STDIN.gets.chomp
