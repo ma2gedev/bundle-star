@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "bundle-star"
-  spec.version       = "1.0.5"
+  spec.version       = "1.0.6"
   spec.authors       = ["Takayuki Matsubara"]
   spec.email         = ["takayuki.1229@gmail.com"]
   spec.description   = %q{Star github repositories automatically when you `bundle-star install`ed}
