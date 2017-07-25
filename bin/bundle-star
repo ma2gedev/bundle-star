@@ -55,7 +55,7 @@ module Bundler
   private
 
     def repository
-      url = installer.spec.homepage
+      url = installer.spec.homepage.dup
       url.sub!(/\/$/, '') if url # some gems contain trailing slash
       if url =~ /\Ahttps?:\/\/([^.]+)?\.?github.com\/(.+)/
         if $1 == nil
